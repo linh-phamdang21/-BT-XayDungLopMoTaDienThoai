@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<table>
+    <tr>
+        <td>
+            <div class="container">
+                <table>
+                    <tr>
+                        <td style="text-align: left"> Samsung</td>
+                        <td style="text-align: right" id="battery1"> 100</td>
+                    </tr>
+                    <tr>
+                        <td colspan="2"><textarea id="outputtext1" cols="30" rows="100" style="width: 200px; height: 80px" placeholder="Outbox..." ></textarea></td>
+                    </tr>
+                    <tr>
+                        <td colspan="2"><textarea id="inputtext1" cols="30" rows="100" style="width: 200px; height: 80px" placeholder="Inbox..." ></textarea> </td>
+                    </tr>
+                    <tr>
+                        <td colspan="2"><input style="width: 200px; height: 50px; margin-top: 20px" type="text"
+                                               id="input1" placeholder="Tell me something..."></td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <button type="button" onclick="sendText1(samsung,iphone)"> Send</button>
+                        </td>
+                        <td>
+                            <button type="button" onclick="delInbox1(samsung)"> Delete </button>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td colspan="2"><button style="margin-top: 20px" type="button" onclick="changePower(samsung)"> Power </button></td>
+                    </tr>
+                </table>
+            </div>
+        </td>
+
+        <td>
+            <div class="container">
+                <table>
+                    <tr>
+                        <td style="text-align: left"> Iphone</td>
+                        <td style="text-align: right" id="battery2"> 100</td>
+                    </tr>
+                    <tr>
+                        <td colspan="2"><textarea id="outputtext2" cols="30" rows="100" style="width: 200px; height: 80px" placeholder="Outbox..." ></textarea></td>
+                    </tr>
+                    <tr>
+                        <td colspan="2"><textarea id="inputtext2" cols="30" rows="100" style="width: 200px; height: 80px" placeholder="Inbox..." ></textarea></td>
+                    </tr>
+                    <tr>
+                        <td colspan="2"><input style="width: 200px; height: 50px; margin-top: 20px" type="text"
+                                               id="input2" placeholder="Tell me something..."></td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <button type="button" onclick="sendText2(iphone,samsung)"> Send</button>
+                        </td>
+                        <td>
+                            <button type="button" onclick="delInbox2(iphone)"> Delete </button>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td colspan="2"><button style="margin-top: 20px" type="button" onclick="changePower(iphone)"> Power </button></td>
+                    </tr>
+                </table>
+            </div>
+        </td>
+    </tr>
+</table>
+
+<script src="app.js"></script>
+</body>
+</html>
